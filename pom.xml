@@ -2,28 +2,36 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>mil.tcri.mps</groupId>
-		<artifactId>mps-parent</artifactId>
-		<version>3.1.3.0-1-SNAPSHOT</version>
-	</parent>
-
-	<groupId>mil.navy.geomap</groupId>
+	<groupId>com.fsi.geomap</groupId>
 	<artifactId>mps-wfs-client</artifactId>
-	<version>3.1.3.0-1-SNAPSHOT</version>
+	<version>4.1.4.0-SNAPSHOT</version>
 
 	<name>MPS GeoServer Plugin</name>
+
+	<properties>
+		<geotools.version>15.1</geotools.version>
+	</properties>
 
 	<scm>
 		<developerConnection>scm:git:https://stash.di2e.net/scm/tcri/tcri-geospatial-mps-geoserver-plugin.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
-	
+
 	<dependencies>
 		<dependency>
-			<groupId>mil.navy.geomap</groupId>
-			<artifactId>mps-api</artifactId>
-			<version>3.1.3.0-1-SNAPSHOT</version>
+			<groupId>org.geotools</groupId>
+			<artifactId>gt-referencing</artifactId>
+			<version>${geotools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.geotools</groupId>
+			<artifactId>gt-main</artifactId>
+			<version>${geotools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.geotools</groupId>
+			<artifactId>gt-cql</artifactId>
+			<version>${geotools.version}</version>
 		</dependency>
 	</dependencies>
 
