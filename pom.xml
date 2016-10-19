@@ -13,7 +13,7 @@
 	</properties>
 
 	<scm>
-		<developerConnection>scm:git:https://stash.di2e.net/scm/tcri/tcri-geospatial-mps-geoserver-plugin.git</developerConnection>
+		<developerConnection>scm:git:https://github.com/forwardslope/mps-wfs-client.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
