@@ -53,5 +53,12 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	
+	<repositories>
+		<repository>
+			<id>webdav-geotools</id>
+			<url>http://download.osgeo.org/webdav/geotools/</url>
+		</repository>
+	</repositories>
 
 </project>
