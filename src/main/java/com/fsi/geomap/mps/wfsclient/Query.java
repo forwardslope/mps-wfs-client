@@ -11,9 +11,9 @@ public interface Query {
     public static class PropertySelection {}
 
     public static class PropertyName extends PropertySelection {
-        public final String name;
+        public final Name name;
 
-        public PropertyName(String name) {
+        public PropertyName(Name name) {
             this.name = name;
         }
     }
@@ -22,7 +22,7 @@ public interface Query {
         public final int traverseXlinkDepth;
         public final int traverseXlinkExpiry;
 
-        public XlinkPropertyName(int traverseXlinkDepth, int traverseXlinkExpiry, String name) {
+        public XlinkPropertyName(int traverseXlinkDepth, int traverseXlinkExpiry, Name name) {
             super(name);
             this.traverseXlinkDepth = traverseXlinkDepth;
             this.traverseXlinkExpiry = traverseXlinkExpiry;
@@ -60,6 +60,8 @@ public interface Query {
     }
     
     public List<PropertySelection> getPropertyNames();
+    
+    public void setPropertyNames(List<Name> propertyNames);
 
     public Filter getFilter();
 
