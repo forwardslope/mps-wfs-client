@@ -11,10 +11,20 @@ public interface Query {
     public static class PropertySelection {}
 
     public static class PropertyName extends PropertySelection {
-        public final Name name;
+        private Name name;
 
+        public PropertyName() {}
+        
         public PropertyName(Name name) {
             this.name = name;
+        }
+        
+        public Name getName() {
+        	return name;
+        }
+        
+        public void setName(Name name) {
+        	this.name = name;
         }
     }
 
@@ -59,9 +69,9 @@ public interface Query {
         }
     }
     
-    public List<PropertySelection> getPropertyNames();
+    public List<PropertyName> getPropertyNames();
     
-    public void setPropertyNames(List<Name> propertyNames);
+    public void setPropertyNames(List<PropertyName> propertyNames);
 
     public Filter getFilter();
 
