@@ -3,7 +3,7 @@
 
 	<groupId>com.fsi.geomap</groupId>
 	<artifactId>mps-wfs-client</artifactId>
-	<version>4.1.4.1-SNAPSHOT</version>
+	<version>5.0.0.0</version>
 
 	<name>MPS GeoServer Plugin</name>
 
