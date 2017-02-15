@@ -3,9 +3,9 @@
 
 	<groupId>com.fsi.geomap</groupId>
 	<artifactId>mps-wfs-client</artifactId>
-	<version>5.0.0.0</version>
+	<version>5.0.0.1-SNAPSHOT</version>
 
-	<name>MPS GeoServer Plugin</name>
+	<name>MPS WFS Client</name>
 
 	<properties>
 		<geotools.version>15.1</geotools.version>
