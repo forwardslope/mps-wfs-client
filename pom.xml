@@ -54,4 +54,11 @@
 		</pluginManagement>
 	</build>
 
+    <repositories>
+		<repository>
+			<id>rite-mtc2soa</id>
+			<url>https://rite.sd.spawar.navy.mil/nexus/content/groups/mtc2soa/</url>
+		</repository>
+    </repositories>
+
 </project>
